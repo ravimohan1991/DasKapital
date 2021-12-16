@@ -346,17 +346,26 @@ In this section, we would like to understand the the manifestation of value (in 
 \subsubsection{Nature of \emph{relative} form}
 First we revisit the definition of exchange value (or value relation) (see \ref{def:exchval}).  A high-schooler, passionate about Physics, can and will tell you that, in order to compare two quantities, we must first devise the relevant units, on which, comparison can be made\footnote{Length can never be compared with speed or energy (except when you are in High-Energy regime, but that is besides the point).}.  Therefore, a relation like \ref{eq:exchangemean} demands the basic units, if we want the same Physics rigor here.
 
-It is clear that this is a game of contexts, meaning, we are bringing two commodities in a single context of use values (a qualitative view-point).  So we will \emph{fix} the physical dimesion\footnote{If you are unaware of dimensional analysis, please consult \href{https://en.wikipedia.org/wiki/Dimensional_analysis}{this}.} of use values to be $[\omega]$\footnote{I am so tempted to use `uv' initials here, but umm $\ldots$.}.  \textcolor{red}{I have reasons to think that this fixing should hold in general, outside the context of exchange value relations.  I leave it on the time for scrutiny}.  The naming convention of units, of dimension $\omega$, shall be
+It is clear that this is a game of contexts, meaning, we are bringing two commodities in a single context of exchange values, using or leveraging the use values (a qualitative view-point).  So we will \emph{fix} the physical dimesion\footnote{If you are unaware of dimensional analysis, please consult \href{https://en.wikipedia.org/wiki/Dimensional_analysis}{this}.} of use values to be $[\omega]$\footnote{I am so tempted to use `uv' initials here, but umm $\ldots$.}.  \textcolor{red}{I have reasons to think that this fixing should hold in general, outside the context of exchange value relations.  I leave it on the time for scrutiny}.
+
+Ok, it turns out I was neglecting the use value as representation of sum of physical properties, which, by the virtue, demands seperate dimensions for different commodities, not brought or existing in the same context.  Hence we will denote the physical dimension of use value to be
+\begin{equation}
+  \label{eq:usevaldim}
+  \left[\Omega_{\text{Commodity Name}}\right]
+\end{equation}
+
+
+The naming convention of units, of dimension $\Omega_{\text{Commodity Name}}$, shall be
 \begin{equation}
   \label{eq:nameconvunit}
   \text{`definite number'}\text{`initials of physical measure'}\footnote{Could be something like km, s, or kg}
 \end{equation}
-Thus for the thing `linen', we have a sequence\footnote{Refer the definition \href{https://en.wikipedia.org/wiki/Sequence}{here}.} $\mathbb{S}_{\text{linen}}$ of use values, like so
+Thus for the thing `linen', as it stands alone as commodity, we have a sequence\footnote{Refer the definition \href{https://en.wikipedia.org/wiki/Sequence}{here}.} $\mathbb{S}_{\text{linen}}$ of use values, like so
 \begin{equation}
   \label{eq:metricsysuseval}
   \mathbb{S}_{\text{linen}} =  \{\ldots,6\text{yd}, 4\text{yd}, \text{yd}, \ldots\},
 \end{equation}
-where, `yd' stands for yards, with each element having fixed dimension $\omega$ and the following usual conversion
+where, `yd' stands for yards, with each element having dimension $\Omega_{\text{linen}}$ and the following usual conversion
 \begin{equation}
   \label{eq:usevalconv}
   (6\text{yd})_{\text{linen}} = 6\cdot (\text{yd})_{\text{linen}}.
@@ -366,10 +375,13 @@ If the use value is gauged without any physical measure, then we write `np' for 
 
 Now equipped with this arsnel, we look at equation \ref{eq:exchangemean} again, which translates as follows
 \begin{align}
-  \label{eq:usevalexeq}
+  \label{eq:usevalexeq1}
   \Phi &= 2\cdot \Xi,\\
-  (\text{np})_{\text{coat}} &= 2\cdot (10\text{yd})_{\text{linen}}
+  \label{eq:usevalexeq2}
+  \underbrace{(\text{np})_{\text{coat}}^{\omega}}_{\text{relative form}} &= \underbrace{2\cdot (10\text{yd})_{\text{linen}}^{\omega}}_{\text{equivalent form}}.
 \end{align}
+
+Here we have explicitly shown the fixing of use value dimension such that the appropriate comparison is legal\footnote{From pure mathematical POV.}.  In Karl's language, this is equivalent of ``coat=linen'' basis.
 
 \begin{remark}
   We note that, in the context of the relation above
@@ -379,12 +391,32 @@ Now equipped with this arsnel, we look at equation \ref{eq:exchangemean} again, 
   \item The value of coat stands forth in its character by the reason of its relation to the other.  Thus we have successfully captured an abstract notion of value in a physical form.
   \item This relation also brings forth the nature of labor common to both varieties of specialized labor, responsible for physical existence and value creation of both things, a human labor in the abstract.
     \item It is the human labor power expended, the human labor in the abstract, which generates the value (as per the definition \ref{def:values}).
-    \item In order to define value as congealed state of human labor, it must have objective existence, \emph{materially} different from the coat and yet something common to all the commodities.  This is somehow related to the fact that in equation \ref{eq:usevalexeq}, $\Xi$, as equivalent, represents something more in the bodily form, a dressed thing, when compared with as standalone commodity.  I may need to find mathematical basis for the expression of this!
+    \item In order to define value as congealed state of human labor, it must have objective existence, \emph{materially} different from the coat and yet something common to all the commodities.  This is somehow related to the fact that in equation \ref{eq:usevalexeq1}, $\Xi$, as equivalent, represents something more in the bodily form, a dressed thing, when compared with as standalone commodity.  I may need to find mathematical basis for the expression of this!
     \item $\Xi$ is a body of value, depository of human labor (weaving, a shape of human labor power, expended)
-      \item When two things are brought in context, say $A$ and $B$, A can't fulfil its role unless $B$ ``sees'' some bodily form of the same role in $A$.  I know how it works, just want to understand its relevance here (look what I did!).  Would be useful to understand in the reflexive scenario!  When $A=B$.
+    \item When two things are brought in context, say $A$ and $B$, A can't fulfil its role unless $B$ ``sees'' some bodily form of the same role in $A$.  I know how it works, just want to understand its relevance here (look what I did!).  Would be useful to understand in the reflexive scenario!  When $A=B$.
+      \item In Karl's fancy description, commodities talk and communicate when brought/written in value relation.  Furthermore, they do that with the human languages including Hebrew, German, and hopefully Sanskrit!  It would be dope to associate Linguistics with Economics, in the form of component, though!
   \end{itemize}
 \end{remark}
 
+\begin{definition}
+  \label{def:relval}
+  In the exchange value or value relation equation (such as \ref{eq:exchangemean}), the value appearing in the relative form is the \emph{relative value}.
+\end{definition}
+
+Now relative value is something numerical and we denote it by $v_{\text{coat}}^{r}$.  We consider equation \ref{eq:usevalexeq2} again with a scope of ``kinematics''\footnote{In Physics, kinematics is the analysis of evolving system only in terms of predefined degrees of freedom, with relevant time, without the regard for internal/external influences and backreactions.  The analysis done after solving Equations Of Motion, so to speak!}
+\begin{equation}
+  (\text{np})_{\text{coat}}^{\omega} = 2\cdot F(\ldots)\cdot (10\text{yd})_{\text{linen}}^{\omega},
+\end{equation}
+where, $F(\ldots)$ is called \emph{form factor} whose arguments we will try to determine by variational methods, such that, previous arguments hold in the context of exchange values.
+
+
+\begin{itemize}
+\item First we demand the following dependence
+  \begin{equation}
+  v_{\text{coat}}^{r} = F(t_{\text{coat}}^l) = a\cdot t_{\text{coat}}^l 
+\end{equation}
+where $t_{\text{coat}}^l$ is the amount of time, the human labor (expended human labor power) was congealed for the production of coat.
+\end{itemize}
 
 \subsubsection{Nature of \emph{equivalent} form}
 In the relation \ref{eq:exchangemean}, $\Phi$, with equivalent role, represents something \emph{more} when compared with out-of-the relation context.  We know, within this role it is the value, which implies that the notion of value is lost in the standalone commodity.  Although it may still be seen as use value.
