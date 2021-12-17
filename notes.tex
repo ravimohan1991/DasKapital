@@ -13,6 +13,7 @@
 \usepackage{verbatim}
 \usepackage{media9}
 \usepackage{xcolor}
+\usepackage{titlesec}
 
  
 \newtheorem{theorem}{Theorem}[section]
@@ -22,6 +23,14 @@
 \newtheorem{definition}{Definition}[section]
 \newenvironment{remark}[1][Remark]{\begin{trivlist}
 \item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+
+
+\setcounter{secnumdepth}{4}
+
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
  
 \begin{document}
 
@@ -400,23 +409,60 @@ Here we have explicitly shown the fixing of use value dimension such that the ap
 
 \begin{definition}
   \label{def:relval}
-  In the exchange value or value relation equation (such as \ref{eq:exchangemean}), the value appearing in the relative form is the \emph{relative value}.
+  In the exchange value or value relation equation (such as \ref{eq:exchangemean}), the value appearing in the relative form is the \emph{relative value} (a real number in $\mathbb{R}$\footnote{An element of real \emph{field}, to be pedantic, which can be refered \href{https://en.wikipedia.org/wiki/Field_(mathematics)}{here}}).
 \end{definition}
 
 Now relative value is something numerical and we denote it by $v_{\text{coat}}^{r}$.  We consider equation \ref{eq:usevalexeq2} again with a scope of ``kinematics''\footnote{In Physics, kinematics is the analysis of evolving system only in terms of predefined degrees of freedom, with relevant time, without the regard for internal/external influences and backreactions.  The analysis done after solving Equations Of Motion, so to speak!}
 \begin{equation}
+  \label{eq:valreltestvar}
   (\text{np})_{\text{coat}}^{\omega} = 2\cdot F(\ldots)\cdot (10\text{yd})_{\text{linen}}^{\omega},
 \end{equation}
-where, $F(\ldots)$ is called \emph{form factor} whose arguments we will try to determine by variational methods, such that, previous arguments hold in the context of exchange values.
+where, $F(\ldots)$ is called \emph{form factor} whose arguments we will try to determine by variational methods, such that, previous arguments hold, in the context of exchange values.
 
 
 \begin{itemize}
-\item First we demand the following dependence
+\item First we demand the following explicit dependence
   \begin{equation}
-  v_{\text{coat}}^{r} = F(t_{\text{coat}}^l) = a\cdot t_{\text{coat}}^l 
+  v_{\text{coat}}^{r} = F(t_{\text{coat}}^l, \ldots) = a\cdot t_{\text{coat}}^l, 
 \end{equation}
 where $t_{\text{coat}}^l$ is the amount of time, the human labor (expended human labor power) was congealed for the production of coat.
-\end{itemize}
+It is easy to check that once $t_{\text{coat}}^l$ doubles, it has direct effect of same factor in the equation \ref{eq:valreltestvar}.
+\item Next, we demand the following explicit dependence of $a$ like so
+  \begin{equation}
+    \label{eq:adep}
+    a = \lambda\cdot\frac{1}{t_{\text{linen}}^l},
+  \end{equation}
+  resulting in the equation
+  \begin{equation}
+    \label{eq:relvalform}
+     v_{\text{coat}}^{r} = \lambda \cdot \frac{t_{\text{coat}}^l}{t_{\text{linen}}^l}.
+   \end{equation}
+ \end{itemize}
+ I am doing nothing new, just framing Karl's words in pure mathematics.  The new part is leaving the $\lambda$ as is, because, in future, if we find more factors responsible for value change of a commodity (favorite endeavor for mathematics friends), it would be easy enough to incorporate in this encapsulation of form factor!
+
+ \paragraph{Properties of $v_{\text{Commodity Name}}^{r}$}
+ This subsubsub-section is partly less scrutnized, because, I need to do more thinking.
+
+ \begin{theorem}
+ Change in $v^{r}$ (given the mathematical form \ref{eq:relvalform}) is \underline{sufficient} condition for reflecting change in the value of the commodity.\footnote{The symbol for relative value, of generic commodity, is written by ommiting the sub-text.}
+ \end{theorem}
+
+ From Karl's arguments and common sense, we see if the labor time is increasing simultaneously for both the commodites, in exchange relation \ref{eq:valreltestvar}, in \emph{same direction} and with \emph{same proportions}, then one can easily imagine values of both the commodities increasing but the $v_{\text{coat}}^{r}$, defined in \ref{eq:relvalform}, remains fixed.
+
+ \begin{proof}
+   Consider the following (mathematical) variation of relative value (given the expression in \ref{eq:relvalform})
+   \begin{align}
+     \label{eq:variationdemo}
+      \delta v_{\text{coat}}^{r} &= \lambda\frac{t_{\text{linen}}^l\delta{t_{\text{coat}}^l} - t_{\text{coat}}^l\delta{t_{\text{linen}}^l}}{\left(t_{\text{linen}}^l\right)^2}
+   \end{align}
+   Now as per Karl's arguments if the relevant conditions are met (same direction and same proportion)
+   \begin{align}
+     \delta{t_{\text{coat}}^l} &= \gamma \delta{t_{\text{linen}}^l},\\
+     \gamma &= \frac{t_{\text{coat}}^l}{t_{\text{linen}}^l},
+   \end{align}
+   it is easy to see that $\delta v_{\text{coat}}^{r}$ vanishes in-spite of $ \delta{t_{\text{coat}}^l}, \delta{t_{\text{linen}}^l} \neq 0$, which represent not-trivial, but simple, human labor time changing the values of commodities in value realtion.
+ \end{proof}
+
 
 \subsubsection{Nature of \emph{equivalent} form}
 In the relation \ref{eq:exchangemean}, $\Phi$, with equivalent role, represents something \emph{more} when compared with out-of-the relation context.  We know, within this role it is the value, which implies that the notion of value is lost in the standalone commodity.  Although it may still be seen as use value.
