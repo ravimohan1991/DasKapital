@@ -1,6 +1,7 @@
 \documentclass[12pt]{extarticle}
 \usepackage{hyperref}
 \usepackage{amsmath}
+\usepackage{mathtools}
 \usepackage{amsfonts}
 \usepackage[dvips]{graphicx}
 \usepackage{mdframed}
@@ -38,6 +39,9 @@
     citecolor={blue!50!black},
     urlcolor={blue!80!black}
 }
+  
+% Defining the Art path
+\graphicspath{{./images/}}
 
 \begin{document}
 
@@ -515,7 +519,7 @@ Let me rewrite the exchange value equation \ref{eq:valreltestvar} to paint the p
    \item \textcolor{blue}{One clue, about bringing two commodities in exchange value context, is the deciding criteria of the ratio (or initial value of form factor $F(\ldots)$) which is the magnitude (whatever it means) of absolute value.}.
    \item We can also see the form factor $F(\ldots)$ as the ``equivalent use value embodiement'' of value (expression in form of $v^r$).
    \item \label{mark:usevalVal} The use value (from which the Value was abstracted\footnote{See Values remark \ref{rem:values}.}) becomes the menifestation of its opposite, the Value.  However keep in mind, use value of equivalent form and Value of relative form of different(?) commodities are being identified.
-   \item Now Karl states something I highly disagree with, and this sheds light on the tension between unchecked Economics and mathematical form of Economics\footnote{Compilation of the entire scope in mathematical language, inevitably from first principles.  Axiomatic Economics so to speak, but that would be ambitious.}.  ``No commodity can stand in the (relative) relation of equivalent to itself, and thus turn its own bodily shape into the expression of its own value, every commodity is \emph{compelled} to choose some other commodity \ldots''.  I can't convince myself, especially when I perform a literal \emph{Gedankenexperiment} of standing in front of (physical) mirror and see my reflection.  Here I am the relative form and reflection is equivalent form, which is essentially my body, in some sense, being the mode of my-being (the Value) expression.  If you want mathematical foundation of doubt, refer equation \ref{eq:usevalexeq2}, which by mathematics, should hold \emph{reflexive} property (clearly visible in \ref{eq:tuto}).
+   \item \label{mark:reflexarg} Now Karl states something I highly disagree with, and this sheds light on the tension between unchecked Economics and mathematical form of Economics\footnote{Compilation of the entire scope in mathematical language, inevitably from first principles.  Axiomatic Economics so to speak, but that would be ambitious.}.  ``No commodity can stand in the (relative) relation of equivalent to itself, and thus turn its own bodily shape into the expression of its own value, every commodity is \emph{compelled} to choose some other commodity \ldots''.  I can't convince myself, especially when I perform a literal \emph{Gedankenexperiment} of standing in front of (physical) mirror and see my reflection.  Here I am the relative form and reflection is equivalent form, which is essentially my body, in some sense, being the mode of my-being (the Value) expression.  If you want mathematical foundation of doubt, refer equation \ref{eq:usevalexeq2}, which by mathematics, should hold \emph{reflexive} property (clearly visible in \ref{eq:tuto}).
    \item \label{mark:combod} The body of the commodity existing in the equivalent form expresses itself as the \emph{materialization} of human labor in the abstract at the same time the product of specifically useful labor (tailoring or weaving) which, I think, is the fact, that Value is being represented in the use value of other (remember the form factor).
      \item It is easy to see and, then go further and, state that ``specialized labor is container of the homogeneous human labor'', the concrete labor becomes medium to express the human labor.  We see another instance of role switch, in which, the conceret labor\footnote{Responsible for generating useful properties of the commodity it is associated with.} of a commodity is now dissociated with it (remember we fixed the dimension to be $[\omega]$ and dissolved its earlier nature) and now aquires a new role, being the mode and form of expression of human labor in the abstract, as long as the value relation holds\footnote{For instance, now (given the value relation)  we say that the utility of weaving consists not in making the cloth, but making an object and hence being creator of Value for coat, for which, it is a mere congeleation of inditiguishable, and thus, homogeneous labor in the abstract.}.  We note that the two-fold nature of labor comes in handy to complete the circle or chain of arguments, in this mirroring scenario.
    \end{enumerate}
@@ -625,13 +629,14 @@ First we note that, the use value and exchange value don't exist in the same con
 distinguishes the value from the use value of A, and therefore places A merely in a relation of
 exchange with a single different commodity, B.''}}
 
-  \begin{definition}
+\begin{definition}
+  \label{def:elmformval}
     The \emph{elementary form} of the Value of a commodity is the elementary form\footnote{The form with antipodes or two poles.} in which the contrast \emph{between Value and use value} contained in the commodity becomes apparent.
   \end{definition}
 
   Building on previous text, refer \ref{par:needforother}, and noting that every the product of labor is a use value in all states of society (see \ref{def:usevalue}), we can see that the same product becomes a commodity only in a set of specific epochs in society's development.  Those epochs are the guardians and, therefore, responsible for ``expressing the \emph{labor spent} on the production of \emph{useful article} (definition unknown) as one of the objective qualities that we defined and know as Value''.
 
-  Karl claims that \textcolor{blue}{``elementary Value form is also the primitive form\footnote{If you want live example think anything about India.} under which a product of labor appears hitorically as a commodity and gradual transformation of such products into commodities proceeds with the develpment of the Value form.''}.  This should be helpful in determining the dynamics of society and all that.
+  Karl claims that \textcolor{blue}{``elementary Value form is also the primitive form\footnote{If you want live example think anything about India.} under which a product of labor appears hitorically as a commodity and gradual transformation of such products into commodities proceeds with the develpment of the Value form.''}.  Furthermore, it seems that products of labor are converted into commodities by \emph{accidental} and occasional exchanges.  This should be helpful in determining the dynamics of society and all that.
 
   Moving on, Karl notes that whatever deficiencies of elementary form are explicit, are mere germ or pathology in some POV.  And it is the role of metamorphoses\footnote{In fact I am all for incorporating Alan Turing's notes on petal formation, here.} to massage, ripen, and season (localization and whatnot) the elementary form to \emph{price form}.
 
@@ -676,23 +681,48 @@ Finally, Karl observes \emph{\textcolor{blue}{``the relative value of each commo
 
 Karl observes that the human labor in the abstract \emph{gains adequate} manifestation in the totality of its manifold (second manifold property, if you are counting).  And now, with the natural insight, the bodily form of commodities, in equivalent forms, should form complete encapsulation of Value endowed to the commodity in relative form.
 
-We have to keep in mind how much role the commodity owners play, in the background, in determining the context for elementary form of Value.
+We have to keep in mind how much role the commodity owners play, in the background, in determining the context for elementary form of Value.  One property for existence of expanded form is that \emph{the exchange be habitual.}
 
 \subsection{The General Form of Value}
 Consider another representation of the equation \ref{eq:totformofexval}
 \begin{equation}
   \label{eq:genformval}
-  (\text{np})_{\text{coat}}^{\omega}=
-   \begin{cases} 
-    2\cdot (10\text{yd})_{\text{linen}}^{\omega}\\
-     (10\text{lbs})_{\text{tea}}^{\omega} \\
+ \left(
+   \begin{rcases*} 
+    2\cdot (10\text{yd})_{\text{linen}}\\
+     (10\text{lbs})_{\text{tea}}\\
       \ldots
-   \end{cases}.
+   \end{rcases*} = (\text{np})_{\text{coat}}\right)^\omega.
  \end{equation}
- \subsubsection{The altered character of the form of Value}
- 
+ \subsubsection{Something new, in the form of Value}
+ We can make a couple of notes
+ \begin{itemize}
+ \item \emph{All} (and not only just one) commodities can now express their Values in the elementary form (see \ref{def:elmformval}).  
+   \item Furthermore there is a \emph{natural} standard, emerging, in the sense that all commodities comply with unity, the ``one and same commodity''.
+ \end{itemize}
 
+ I am honored to relate this observation to the phrase used in Three Muskateers, The Rape of Lucrece, and others, chiefly, ``One for All, All for One''.  Hence the figure \ref{fig:alloneall}.
+ \begin{figure}
+   \centering
+   \includegraphics[scale=3.5]{Unus_pro_omnibus,_omnes_pro_uno}
+   \caption{A symbol of ``Unity in Diversity''.}
+    \label{fig:alloneall}
+  \end{figure}
 
+  Congratulations! We have now successfully generalized the notion of \emph{elementary form} of Value.  To see that we note:  one shall have the liberty to switch the position of any entity of equation \ref{eq:totformofexval} without any adulteration of the meaning in any possibly conceivable sense\footnote{That is basic Mathematics!}.
+
+  It is important to \emph{emphasize} that we are branching off from Karl's understanding (Marxism?) here because
+ \begin{itemize}
+  \item First we are insisting that the reflexive axiom/property holds for commodities (noted in \ref{mark:reflexarg}).
+  \item The series \ref{eq:totformofexval} be terminating in a practise. 
+  \end{itemize}
+  Once it is done, whatever we are left with is essentially the \emph{total form} of Value.
+
+  Now, we remark
+  \begin{itemize}
+  \item Value of every commodity (present in the series \ref{eq:totformofexval}) is expressed in terms of single commodity and can be deciphered by humans.  This is precisely because of the element of generality leading to this categorical unification.
+    \item 
+  \end{itemize}
 \bibliographystyle{JHEP.bst}
 \bibliography{list.bib}
 \end{document}
