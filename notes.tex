@@ -15,6 +15,10 @@
 \usepackage{media9}
 \usepackage{xcolor}
 \usepackage{titlesec}
+\usepackage{makecell}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{float}
 
 % Useful definitions for Math environments 
 \newtheorem{theorem}{Theorem}[section]
@@ -42,6 +46,11 @@
   
 % Defining the Art path
 \graphicspath{{./images/}}
+
+% Container for tabularx
+\floatstyle{plain}
+\newfloat{tabcontainer}{thp}{lop}
+\floatname{tabcontainer}{Table}
 
 \begin{document}
 
@@ -714,15 +723,56 @@ Consider another representation of the equation \ref{eq:totformofexval}
   It is important to \emph{emphasize} that we are branching off from Karl's understanding (Marxism?) here because
  \begin{itemize}
   \item First we are insisting that the reflexive axiom/property holds for commodities (noted in \ref{mark:reflexarg}).
-  \item The series \ref{eq:totformofexval} be terminating in a practise. 
+  \item Demanding the series \ref{eq:totformofexval} be terminating in a practise. 
   \end{itemize}
-  Once it is done, whatever we are left with is essentially the \emph{total form} of Value.
+  Once it is done, whatever we are left with is essentially the \emph{workable form} of Value.  My terminology, hasn't caught on on much in the Economics community!
 
-  Now, we remark
-  \begin{itemize}
-  \item Value of every commodity (present in the series \ref{eq:totformofexval}) is expressed in terms of single commodity and can be deciphered by humans.  This is precisely because of the element of generality leading to this categorical unification.
-    \item 
-  \end{itemize}
+  \subsubsection{Acquired social role}
+  Since the general form of Value is endowed to a commodity by (the virtue of?) only other commodities, elicits the fact that their existence is purely social. The Value, being a substance of social nature, reinforces their exclusive social existence, in the same context, should generate a social standard for ``more'' (not upsetting Mother Nature) commodities.
+
+  \begin{remark}
+    We note that
+    \begin{itemize}
+    \item There is a \emph{qualitative} equality, clear from $\omega$ context, and quantitative comparison amongst all the commodities as magnitude of Value in this general form.
+    \item The general form of relative value, \emph{\textcolor{blue}{``embracing the whole world of commodities''}}, allows the inclusion of that one commodity, coat here for instance, which was excluded from rest, in the sense that it, now, plays the part of equivalent as \emph{Universal Equivalent}.
+    \item The bodily form of the coat is now the form assumed in common by the values of all commodities; it therefore becomes directly exchangeable with all and every of them.
+      \item \emph{\textcolor{blue}{``The substance coat becomes the visible incarnation, the social chrysalis state
+            of every kind of human labour.''}}
+        \item Tailoring, which is the labour of certain private individuals
+producing a particular article, coat, acquires in consequence a social character, the character of
+equality with all other kinds of labour.
+\item The innumerable equations of which the general form of
+value is composed, equate in turn the labour embodied in the coat to that embodied in every
+other commodity, and they thus convert tailoring into the general form of manifestation of
+undifferentiated human labour.
+\item Thus the labor realized in the Values of commodities is not only presented under, Karl's words, negative aspect (under which abstraction is made from every concrete from and useful property of actual work), but also its positive nature (of equalizing?).
+  \item The general value form is reduction of all kinds of actual labor to their common character of being human labor, the expenditure of human labor power.
+    \end{itemize}
+  \end{remark}
+
+  \subsubsection{Contrasting Elementary,  Expanded, and General}
+  We have built a Table \ref{tab:valform} curated with various forms of Value we have covered so far (except the workable form of course).  This shall provide tremendous help in Mathematical formulation of Economics.
+\begin{tabcontainer}
+ \begin{tabularx}{\textwidth}{| X | X | X | X |}
+ \hline
+  & Elementary\footnote{Elementary form of Value.  Not to be confused with \emph{elementary form} which is defined in the footnote in the definition \ref{def:elmformval}.} & Expanded & General \\ [0.5ex] 
+ \hline\hline
+ Equation & \(
+   A = B
+ \) & \(A = B = \ldots\) &  \(
+   \begin{rcases*} 
+    B\\
+    C\\
+      \ldots
+    \end{rcases*} = A\) \\
+    Elementary Form\footnote{Refer definition \ref{def:elmformval}.} & Just essence & Tractable contrast with all possible bodily forms\footnote{Remember all \emph{other} commodities are mere equivalent forms in this expression.}.   & Commodities equalizer\footnote{All commodities are considered in their entirety and not just as equivalents.}.\\
+    Characteristic Property & Occurs only in beginning\footnote{When products of labor turn into commodities by accidental and occasional exchanges.  The owner dynamics might play some role.}. &  Manifests when \emph{habitual} exchange happens\footnote{Interestingly, it is the product of labor (something not a fully formed commodity) which is being exchanged for various other commodities.}.  & Human decipherable, leading to categorical unification.\\
+    Value Assignment & Commodity $A$ has to find expression of Value\footnote{Via special business and without the help of others (commodities?).  I have witnessed that happening, and it takes place by the virtue of already present Value in that commodity.  Not really sure though!} (in other), solo. & $A$ plays same role (as played in Elementary form)  & Game of collective responsibility of the entire world of commodities\footnote{New commodity \emph{shall} follow the suit if it were to be a part of same world.}.\\
+    \hline
+  \end{tabularx}
+  \caption{Table of Forms.}
+  \label{tab:valform}
+\end{tabcontainer}
 \bibliographystyle{JHEP.bst}
 \bibliography{list.bib}
 \end{document}
