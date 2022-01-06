@@ -19,6 +19,7 @@
 \usepackage{array}
 \usepackage{tabularx}
 \usepackage{float}
+\usepackage{tikz}
 
 % Useful definitions for Math environments 
 \newtheorem{theorem}{Theorem}[section]
@@ -51,6 +52,13 @@
 \floatstyle{plain}
 \newfloat{tabcontainer}{thp}{lop}
 \floatname{tabcontainer}{Table}
+
+% For visual representation of Flow-Charts
+\usetikzlibrary{shapes.geometric, arrows}
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black, fill=red!30]
+\tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=orange!30]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+
 
 \begin{document}
 
@@ -749,7 +757,7 @@ undifferentiated human labour.
   \item The general value form is reduction of all kinds of actual labor to their common character of being human labor, the expenditure of human labor power.
     \end{itemize}
   \end{remark}
-
+  
   \subsubsection{Contrasting Elementary,  Expanded, and General}
   We have built a Table \ref{tab:valform} curated with various forms of Value we have covered so far (except the workable form of course).  This shall provide tremendous help in Mathematical formulation of Economics.
 \begin{tabcontainer}
@@ -773,6 +781,37 @@ undifferentiated human labour.
   \caption{Table of Forms.}
   \label{tab:valform}
 \end{tabcontainer}
+
+ \subsubsection{The interplay of Relative and Equivalent form}
+  We recall the equation \ref{eq:usevalexeq2}
+  \begin{align}
+  \underbrace{(\text{np})_{\text{coat}}^{\omega}}_{\text{relative form}} &= \underbrace{2\cdot (10\text{yd})_{\text{linen}}^{\omega}}_{\text{equivalent form}}.
+  \end{align}
+  Here it is clear \emph{degree of development} of equivalent form is only the expression and result of the development of relative form inspite of being poles apart, literally!  The Physicist inside me exclaims that demanding a natural time dependence of equivalent form should do the trick (remember it must be different from form factor \ref{eq:valreltestvar} time dependence as observed later there).
+
+  Karl describes the dynamics in terms of a metamorphosis of various forms of Values (purely social context that is).  Refer to Table \ref{tab:valform} for revision.  Goes something like 
+
+\begin{tikzpicture}[node distance=2cm]
+  \node (start) [startstop] {Start};
+  \node (pro1)  [process, below of=start] {Isolated $A$ and $B$};
+  \node (pro2)  [process, right of=pro1, xshift=2cm] {Expanded Form};
+  \node (pro3)  [process, right of=pro2, xshift=2cm] {General Form};
+  \node (stop)  [startstop, below of=pro3] {Stop};
+
+  \draw [arrow] (start) -- (pro1);
+  \draw [arrow] (pro1) -- (pro2);
+  \draw [arrow] (pro2) -- (pro3);
+  \draw [arrow] (pro3) -- (stop);
+ 
+\end{tikzpicture}
+
 \bibliographystyle{JHEP.bst}
 \bibliography{list.bib}
+
+\appendix
+
+\section{Word Meanings}
+company $\rightarrow$ con pane (Italian) $\rightarrow$ Group of people eating bread and doing business.\newline
+finance $\rightarrow$ finir (French) $\rightarrow$ paying off blood debts and finishing the tangible commercial transactions, means to achieve the end of an activity or something.
+
 \end{document}
